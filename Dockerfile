@@ -20,7 +20,7 @@ COPY . .
 
 ## Run setup.py to install the package
 ## ignore cache to reduce image size
-RUN pip install --no cache-dir -e .     
+RUN pip install --no-cache-dir -e .     
 
 
 # Used PORTS
