@@ -74,4 +74,3 @@ The included image `AI+Anime+Recommender+Workflow.png` illustrates the end-to-en
 ## Author
 **[Prashanth]**
 
-(Replace this section with your full details as desired.) 
