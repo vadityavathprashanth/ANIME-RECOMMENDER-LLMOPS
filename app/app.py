@@ -1,7 +1,17 @@
 
 import streamlit as st
+import os
+import sys
+
+# Add the project root to Python path
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_root)
+
 from pipeline.pipeline import AnimeRecommendationPipeline
 from dotenv import load_dotenv
+
+# Set tokenizers parallelism to avoid warnings
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 st.set_page_config(page_title="Anime Recommender",layout="wide")
 

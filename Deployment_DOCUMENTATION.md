@@ -35,7 +35,7 @@
 - **Clone your GitHub repo**
 
   ```bash
-  git clone https://github.com/data-guru0/TESTING-9.git
+  git clone https://github.com/username/TESTING-9.git
   ls
   cd TESTING-9
   ls  # You should see the contents of your project
@@ -157,7 +157,7 @@ git push origin main
 ```
 
 - When prompted:
-  - **Username**: `data-guru0`
+  - **Username**: `github-username`
   - **Password**: GitHub token (paste, it's invisible)
     - For password:
       - open settings in github
@@ -185,8 +185,8 @@ docker build -t llmops-app:latest .
 docker images
 
 kubectl create secret generic llmops-secrets \
-  --from-literal=GROQ_API_KEY="" \
-  --from-literal=HUGGINGFACEHUB_API_TOKEN=""
+  --from-literal=GROQ_API_KEY="GROQ_API_KEY" \
+  --from-literal=HUGGINGFACEHUB_API_TOKEN="HUGGINGFACE_API_KEY"
 
 kubectl apply -f llmops-k8s.yaml
 

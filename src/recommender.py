@@ -20,6 +20,6 @@ class AnimeRecommender:
 
     # Method to get anime recommendations based on a query
     def get_recommendations(self, query:str):
-        result = self.qa_chain({"query": query})
+        result = self.qa_chain.invoke({"query": query})
         return result['result'] 
     
